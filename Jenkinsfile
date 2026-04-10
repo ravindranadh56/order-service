@@ -5,8 +5,8 @@ pipeline {
     environment {
         AWS_REGION = "us-east-1"
         ECR_REPO = "ravindra-backend-orderservice"
-        ECS_CLUSTER = "ravindra-dev-cluster"
-        ECS_SERVICE = "ravindra-order-service-service"
+        ECS_CLUSTER = "order-service-cluster"
+        ECS_SERVICE = "ravindra-service-service"
         TASK_DEF_NAME = "ravindra-order-service"
         IMAGE_TAG = "${BUILD_NUMBER}"
         AWS_ACCOUNT_ID = "060699023557"
